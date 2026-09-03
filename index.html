@@ -239,6 +239,49 @@
       line-height: 1.5;
     }
 
+    /* ── 言い換え質問 ── */
+    .alt-block {
+      background: #F0F5FF;
+      border: 2px dashed #A9BEF5;
+      border-radius: 6px;
+      padding: 10px 13px;
+      margin-bottom: 16px;
+    }
+    .alt-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+    }
+    .alt-q {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* ── 絶対に聞きたい質問 ── */
+    .highlight-block {
+      background: var(--navy);
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin-bottom: 16px;
+    }
+    .highlight-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--yellow);
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+    .highlight-q {
+      font-size: 15px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.5;
+    }
+
     /* ── SUB CATEGORIES ── */
     .sub-category { margin-bottom: 14px; }
     .sub-category:last-child { margin-bottom: 0; }
@@ -364,7 +407,6 @@
           <span class="sub-cat-label">📍 事業の中身</span>
           <div class="sub-items">
             <div class="sub-item">どんな事業をされていますか？</div>
-            <div class="sub-item">卒業してから何年経ちましたか？</div>
             <div class="sub-item">事業の形は、当時から変わりましたか？</div>
           </div>
         </div>
@@ -377,8 +419,9 @@
     <div class="q-header" onclick="toggleCard(this)">
       <div class="q-num">②</div>
       <div class="q-title">
-        <span class="q-cat">卒業時 → 今</span>
-        <span class="q-main">卒業した時と今、何が一番変わりましたか？</span>
+        <span class="q-cat">卒業からの時間</span>
+        <span class="q-main">卒業されてどれくらい経ちましたか？</span>
+        <span class="q-note">💡 答えるのが簡単な質問。ここで気持ちを温める</span>
       </div>
       <div class="q-arrow">▼</div>
     </div>
@@ -387,27 +430,28 @@
         <div class="reaction-block">
           <div class="reaction-label">💬 出てきやすい言葉</div>
           <div class="reaction-chips">
-            <span class="reaction-chip">「当時の目標が小さすぎた」</span>
+            <span class="reaction-chip">「あっという間でした」</span>
             <span class="reaction-chip">「あの頃は必死だった」</span>
+            <span class="reaction-chip">「当時の目標が小さすぎた」</span>
             <span class="reaction-chip">「今は仕組みで回ってる」</span>
-            <span class="reaction-chip">「規模が全然違う」</span>
             <span class="reaction-chip">「もう戻れない」</span>
-          </div>
-        </div>
-        <div class="sub-category num">
-          <span class="sub-cat-label">📊 成長を証明する</span>
-          <div class="sub-items">
-            <div class="sub-item">卒業した時の目標は何でしたか？</div>
-            <div class="sub-item">それはもう達成しましたか？</div>
-            <div class="sub-item">今はどんな目標を持っていますか？</div>
           </div>
         </div>
         <div class="sub-category emo">
           <span class="sub-cat-label">💜 変化を深掘りする</span>
           <div class="sub-items">
+            <div class="sub-item">卒業した時と今、何が一番変わりましたか？</div>
             <div class="sub-item">一番変わったのは、数字ですか？それとも自分自身ですか？</div>
             <div class="sub-item">卒業した直後、一番不安だったことは何ですか？</div>
             <div class="sub-item">「もう大丈夫だ」と思えたのはいつ頃でしたか？</div>
+          </div>
+        </div>
+        <div class="sub-category num">
+          <span class="sub-cat-label">📊 当時の目標</span>
+          <div class="sub-items">
+            <div class="sub-item">卒業した時の目標は何でしたか？</div>
+            <div class="sub-item">それはもう達成しましたか？</div>
+            <div class="sub-item">今はどんな目標を持っていますか？</div>
           </div>
         </div>
       </div>
@@ -419,8 +463,8 @@
     <div class="q-header" onclick="toggleCard(this)">
       <div class="q-num">③</div>
       <div class="q-title">
-        <span class="q-cat">学びと変化</span>
-        <span class="q-main">プロFで学んで、何が一番変わりましたか？</span>
+        <span class="q-cat">今も活きていること</span>
+        <span class="q-main">プロFを卒業された後でも、活かされていることはありますか？</span>
       </div>
       <div class="q-arrow">▼</div>
     </div>
@@ -429,19 +473,23 @@
         <div class="reaction-block">
           <div class="reaction-label">💬 出てきやすい言葉</div>
           <div class="reaction-chips">
+            <span class="reaction-chip">「マーケティングの考え方」</span>
+            <span class="reaction-chip">「めぐみさんの言葉が今も残ってる」</span>
             <span class="reaction-chip">「考え方が根本から変わった」</span>
             <span class="reaction-chip">「数字が読めるようになった」</span>
-            <span class="reaction-chip">「一人で抱えなくなった」</span>
-            <span class="reaction-chip">「決断が速くなった」</span>
             <span class="reaction-chip">「今でも毎日使ってる」</span>
           </div>
+        </div>
+        <div class="alt-block">
+          <div class="alt-label">🔄 言葉が出てこない場合は</div>
+          <div class="alt-q">ビジネス／活動に役立っていることはありますか？</div>
         </div>
         <div class="sub-category use">
           <span class="sub-cat-label">🛠️ 学びの中身</span>
           <div class="sub-items">
             <div class="sub-item">具体的に、どんなことを学びましたか？</div>
             <div class="sub-item">一番役に立った学びは何でしたか？</div>
-            <div class="sub-item">卒業した今も、使い続けているものはありますか？</div>
+            <div class="sub-item">仕事のやり方で、今も守っていることはありますか？</div>
           </div>
         </div>
         <div class="sub-category emo">
@@ -461,51 +509,9 @@
     <div class="q-header" onclick="toggleCard(this)">
       <div class="q-num">④</div>
       <div class="q-title">
-        <span class="q-cat">もしもの人生</span>
-        <span class="q-main">プロFがなかったら、今どうなってたと思いますか？</span>
-        <span class="q-note">🔥 リール映え最強。ここは時間をかけて</span>
-      </div>
-      <div class="q-arrow">▼</div>
-    </div>
-    <div class="q-body">
-      <div class="q-body-inner">
-        <div class="reaction-block">
-          <div class="reaction-label">💬 出てきやすい言葉</div>
-          <div class="reaction-chips">
-            <span class="reaction-chip">「考えたくない」</span>
-            <span class="reaction-chip">「絶対に今の私はいない」</span>
-            <span class="reaction-chip">「まだ会社にいたと思う」</span>
-            <span class="reaction-chip">「あのまま諦めてた」</span>
-            <span class="reaction-chip">「想像もできない」</span>
-          </div>
-        </div>
-        <div class="sub-category emo">
-          <span class="sub-cat-label">💜 人生への影響</span>
-          <div class="sub-items">
-            <div class="sub-item">仕事以外で変わったことはありますか？</div>
-            <div class="sub-item">家族との関係は変わりましたか？</div>
-            <div class="sub-item">価値観で、大きく変わったものはありますか？</div>
-          </div>
-        </div>
-        <div class="sub-category turn">
-          <span class="sub-cat-label">🔥 転機を引き出す</span>
-          <div class="sub-items">
-            <div class="sub-item">プロFに入っていなかったら、何をしていたと思いますか？</div>
-            <div class="sub-item">一番人生が動いたと感じる瞬間はいつでしたか？</div>
-            <div class="sub-item">今の自分を一言で表すとしたら？</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ⑤ -->
-  <div class="q-card" data-q="5">
-    <div class="q-header" onclick="toggleCard(this)">
-      <div class="q-num">⑤</div>
-      <div class="q-title">
         <span class="q-cat">10年の思い出</span>
         <span class="q-main">プロFで一番忘れられない瞬間は？</span>
+        <span class="q-note">🔥 リール映え最強。ここは時間をかけて</span>
       </div>
       <div class="q-arrow">▼</div>
     </div>
@@ -521,6 +527,14 @@
             <span class="reaction-chip">「今でも覚えてる」</span>
           </div>
         </div>
+        <div class="alt-block">
+          <div class="alt-label">🔄 言葉が出てこない場合は</div>
+          <div class="alt-q">プロFの中で、印象に残っている出来事はありますか？</div>
+        </div>
+        <div class="highlight-block">
+          <div class="highlight-label">🔥 ここは絶対に聞きたい</div>
+          <div class="highlight-q">プロFがなかったら、今どうなってたと思いますか？</div>
+        </div>
         <div class="sub-category turn">
           <span class="sub-cat-label">🔥 エピソードを引き出す</span>
           <div class="sub-items">
@@ -529,12 +543,64 @@
             <div class="sub-item">今思い出しても鳥肌が立つ瞬間はありますか？</div>
           </div>
         </div>
+        <div class="sub-category emo">
+          <span class="sub-cat-label">💜 人生への影響</span>
+          <div class="sub-items">
+            <div class="sub-item">仕事以外で変わったことはありますか？</div>
+            <div class="sub-item">家族との関係は変わりましたか？</div>
+          </div>
+        </div>
         <div class="sub-category use">
           <span class="sub-cat-label">🛠️ コミュニティの記憶</span>
           <div class="sub-items">
             <div class="sub-item">当時の仲間とは、今も繋がっていますか？</div>
             <div class="sub-item">プロFの空気を一言で表すとしたら？</div>
-            <div class="sub-item">一番影響を受けた人は誰でしたか？</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⑤ -->
+  <div class="q-card" data-q="5">
+    <div class="q-header" onclick="toggleCard(this)">
+      <div class="q-num">⑤</div>
+      <div class="q-title">
+        <span class="q-cat">めぐみさんの10年</span>
+        <span class="q-main">めぐみさんの当時と今で、印象は変わりましたか？</span>
+      </div>
+      <div class="q-arrow">▼</div>
+    </div>
+    <div class="q-body">
+      <div class="q-body-inner">
+        <div class="reaction-block">
+          <div class="reaction-label">💬 出てきやすい言葉</div>
+          <div class="reaction-chips">
+            <span class="reaction-chip">「あの頃から一貫してる」</span>
+            <span class="reaction-chip">「もっとすごくなった」</span>
+            <span class="reaction-chip">「スケールが違う」</span>
+            <span class="reaction-chip">「変わらず本気」</span>
+            <span class="reaction-chip">「柔らかくなった気がする」</span>
+          </div>
+        </div>
+        <div class="alt-block">
+          <div class="alt-label">🔄 言葉が出てこない場合は</div>
+          <div class="alt-q">今のめぐみさんを見て、どう感じますか？</div>
+        </div>
+        <div class="sub-category emo">
+          <span class="sub-cat-label">💜 当時の印象</span>
+          <div class="sub-items">
+            <div class="sub-item">所属していた頃、めぐみさんはどんな人でしたか？</div>
+            <div class="sub-item">初めて会った時の印象を覚えていますか？</div>
+            <div class="sub-item">当時、一番驚いたことは何ですか？</div>
+          </div>
+        </div>
+        <div class="sub-category turn">
+          <span class="sub-cat-label">🔥 今の印象</span>
+          <div class="sub-items">
+            <div class="sub-item">10年経って、変わったと感じるところはありますか？</div>
+            <div class="sub-item">逆に、ずっと変わらないところは？</div>
+            <div class="sub-item">今のめぐみさんを一言で表すとしたら？</div>
           </div>
         </div>
       </div>
@@ -548,6 +614,7 @@
       <div class="q-title">
         <span class="q-cat">めぐみさんへ</span>
         <span class="q-main">めぐみさんに伝えたいことは？</span>
+        <span class="q-note">🎉 10周年のお祝いメッセージとして</span>
       </div>
       <div class="q-arrow">▼</div>
     </div>
@@ -563,6 +630,10 @@
             <span class="reaction-chip">「本当にありがとう」</span>
           </div>
         </div>
+        <div class="alt-block">
+          <div class="alt-label">🔄 言葉が出てこない場合は</div>
+          <div class="alt-q">めぐみさんが目の前にいたら、なんて声をかけますか？</div>
+        </div>
         <div class="sub-category msg">
           <span class="sub-cat-label">❤️ メッセージを引き出す</span>
           <div class="sub-items">
@@ -574,8 +645,8 @@
         <div class="sub-category emo">
           <span class="sub-cat-label">💜 関係性を深掘りする</span>
           <div class="sub-items">
-            <div class="sub-item">初めて会った時の印象を覚えていますか？</div>
             <div class="sub-item">今のめぐみさんに、一番聞きたいことは？</div>
+            <div class="sub-item">これからのプロFに期待することはありますか？</div>
           </div>
         </div>
       </div>
@@ -603,6 +674,10 @@
             <span class="reaction-chip">「人生変わるよ」</span>
             <span class="reaction-chip">「早く入って」</span>
           </div>
+        </div>
+        <div class="alt-block">
+          <div class="alt-label">🔄 言葉が出てこない場合は</div>
+          <div class="alt-q">友達に「プロFってどう？」と聞かれたら、なんて答えますか？</div>
         </div>
         <div class="sub-category msg">
           <span class="sub-cat-label">❤️ 背中を押す</span>
